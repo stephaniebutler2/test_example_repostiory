@@ -1,26 +1,32 @@
 {
-    "mig_pack1::CAR_COMPANY_SALES": {
-        "target": {
-            "schema": "MIGTEST",
-            "object": "CAR_COMPANY_SALES"
-        }
-    },
-    "mig_pack1::SCARR": {
-        "target": {
-            "schema": "SFLIGHT",
-            "object": "SCARR"
-        }
-    },
-    "mig_pack1::SBOOK": {
-        "target": {
-            "schema": "SFLIGHT",
-            "object": "SBOOK"
-        }
-    },
-    "mig_pack1::T_SCARR": {
-        "target": {
-            "schema": "SFLIGHT",
-            "object": "T_SCARR"
-        }
-    }
+	"mig_pack1::CAR_COMPANY_SALES": {
+		"target": {
+			"schema": "MIGTEST",
+			"object": "CAR_COMPANY_SALES"
+		}
+	},
+	"mig_pack1::SCARR": {
+		"target": {
+			"schema": "SFLIGHT",
+			"object": "SCARR"
+		}
+	},
+	"mig_pack1::SBOOK": {
+		"target": {
+			"schema": "SFLIGHT",
+			"object": "SBOOK"
+		}
+	},
+	"mig_pack1::T_SCARR": {
+		"target": {
+			"schema": "SFLIGHT",
+			"object": "T_SCARR"
+		}
+	},
+	"mig_pack1::SCARR_TEST": {
+		"target": {
+			"schema": "SFLIGHT",
+			"object": "T_SCARR"
+		}
+	}
 }
