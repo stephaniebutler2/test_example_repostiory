@@ -1,0 +1,68 @@
+{
+    "role": {
+        "name": "mig_pack1::PublicAccessObjects",
+        "object_privileges": [
+            {
+                "name": "mig_pack1::CV_COMPANY_SALES",
+                "type": "VIEW",
+                "privileges": [
+                    "SELECT"
+                ]
+            },
+            {
+                "name": "mig_pack1::CV_REUSE",
+                "type": "VIEW",
+                "privileges": [
+                    "SELECT"
+                ]
+            },
+            {
+                "name": "mig_pack1::CV_SBOOK",
+                "type": "VIEW",
+                "privileges": [
+                    "SELECT"
+                ]
+            },
+            {
+                "name": "mig_pack1::CV_SCARR",
+                "type": "VIEW",
+                "privileges": [
+                    "SELECT"
+                ]
+            },
+            {
+                "name": "mig_pack1::CV_SCRIPTED",
+                "type": "VIEW",
+                "privileges": [
+                    "SELECT"
+                ]
+            },
+            {
+                "name": "mig_pack1::materialize_scarr",
+                "type": "PROCEDURE",
+                "privileges": [
+                    "EXECUTE"
+                ]
+            },
+            {
+                "name": "mig_pack1::TABLE_FUNCTION_CV_SCRIPTED",
+                "type": "VIEW",
+                "privileges": [
+                    "SELECT"
+                ]
+            },
+            {
+                "name": "mig_pack1::materialize_scarr",
+                "privileges": [
+                    "SELECT"
+                ]
+            },
+            {
+                "name": "mig_pack1::TABLE_FUNCTION_CV_SCRIPTED",
+                "privileges": [
+                    "SELECT"
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,74 @@
+{
+    "SFLIGHT_UPS": {
+        "object_owner": {
+            "object_privileges": [
+                {
+                    "name": "CAR_COMPANY_SALES",
+                    "schema": "MIGTEST",
+                    "privileges_with_grant_option": [
+                        "SELECT"
+                    ]
+                },
+                {
+                    "name": "SCARR",
+                    "schema": "SFLIGHT",
+                    "privileges_with_grant_option": [
+                        "SELECT"
+                    ]
+                },
+                {
+                    "name": "SBOOK",
+                    "schema": "SFLIGHT",
+                    "privileges_with_grant_option": [
+                        "SELECT"
+                    ]
+                },
+                {
+                    "name": "T_SCARR",
+                    "schema": "SFLIGHT",
+                    "privileges": [
+                        "SELECT",
+                        "UPDATE",
+                        "DELETE",
+                        "INSERT"
+                    ]
+                }
+            ]
+        },
+        "application_user": {
+            "object_privileges": [
+                {
+                    "name": "CAR_COMPANY_SALES",
+                    "privileges": [
+                        "SELECT"
+                    ],
+                    "schema": "MIGTEST"
+                },
+                {
+                    "name": "SCARR",
+                    "privileges": [
+                        "SELECT"
+                    ],
+                    "schema": "SFLIGHT"
+                },
+                {
+                    "name": "SBOOK",
+                    "privileges": [
+                        "SELECT"
+                    ],
+                    "schema": "SFLIGHT"
+                },
+                {
+                    "name": "T_SCARR",
+                    "privileges": [
+                        "SELECT",
+                        "UPDATE",
+                        "DELETE",
+                        "INSERT"
+                    ],
+                    "schema": "SFLIGHT"
+                }
+            ]
+        }
+    }
+}

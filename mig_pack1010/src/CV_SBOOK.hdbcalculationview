@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Calculation:scenario xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" schemaVersion="2.3" id="mig_pack1::CV_SBOOK" applyPrivilegeType="NONE" defaultClient="" defaultLanguage="$$language$$" hierarchiesSQLEnabled="false" dataCategory="DIMENSION" enforceSqlExecution="false" executionSemantic="UNDEFINED" outputViewType="Projection" xscCompatibilityMode="true">
+  <origin/>
+  <descriptions defaultDescription="CV_SBOOK"/>
+  <metadata activatedAt="2021-02-08 20:11:50.0" changedAt="2021-02-08 19:23:40.053" createdAt="2021-02-08 19:23:40.053"/>
+  <localVariables/>
+  <variableMappings/>
+  <informationModelLayout relativeWidthScenario="27"/>
+  <dataSources>
+    <DataSource id="SBOOK">
+      <resourceUri>mig_pack1::SBOOK</resourceUri>
+    </DataSource>
+  </dataSources>
+  <calculationViews/>
+  <logicalModel id="SBOOK">
+    <descriptions defaultDescription="CV_SBOOK"/>
+    <attributes>
+      <attribute id="MANDT" order="1" attributeHierarchyActive="false" displayAttribute="false">
+        <descriptions defaultDescription="MANDT"/>
+        <keyMapping columnObjectName="SBOOK" columnName="MANDT"/>
+      </attribute>
+      <attribute id="CARRID" order="2" attributeHierarchyActive="false" displayAttribute="false">
+        <descriptions defaultDescription="CARRID"/>
+        <keyMapping columnObjectName="SBOOK" columnName="CARRID"/>
+      </attribute>
+      <attribute id="CONNID" order="3" attributeHierarchyActive="false" displayAttribute="false">
+        <descriptions defaultDescription="CONNID"/>
+        <keyMapping columnObjectName="SBOOK" columnName="CONNID"/>
+      </attribute>
+      <attribute id="FLDATE" order="4" attributeHierarchyActive="false" displayAttribute="false">
+        <descriptions defaultDescription="FLDATE"/>
+        <keyMapping columnObjectName="SBOOK" columnName="FLDATE"/>
+      </attribute>
+      <attribute id="BOOKID" order="5" attributeHierarchyActive="false" displayAttribute="false">
+        <descriptions defaultDescription="BOOKID"/>
+        <keyMapping columnObjectName="SBOOK" columnName="BOOKID"/>
+      </attribute>
+      <attribute id="CUSTOMID" order="6" attributeHierarchyActive="false" displayAttribute="false">
+        <descriptions defaultDescription="CUSTOMID"/>
+        <keyMapping columnObjectName="SBOOK" columnName="CUSTOMID"/>
+      </attribute>
+      <attribute id="CUSTTYPE" order="7" attributeHierarchyActive="false" displayAttribute="false">
+        <descriptions defaultDescription="CUSTTYPE"/>
+        <keyMapping columnObjectName="SBOOK" columnName="CUSTTYPE"/>
+      </attribute>
+      <attribute id="LUGGWEIGHT" order="8" attributeHierarchyActive="false" displayAttribute="false">
+        <descriptions defaultDescription="LUGGWEIGHT"/>
+        <keyMapping columnObjectName="SBOOK" columnName="LUGGWEIGHT"/>
+      </attribute>
+    </attributes>
+    <calculatedAttributes/>
+    <privateDataFoundation>
+      <tableProxies/>
+      <joins/>
+      <layout>
+        <shapes/>
+      </layout>
+    </privateDataFoundation>
+    <baseMeasures/>
+    <calculatedMeasures/>
+    <restrictedMeasures/>
+    <localDimensions/>
+  </logicalModel>
+  <layout>
+    <shapes>
+      <shape expanded="true" modelObjectName="Output" modelObjectNameSpace="MeasureGroup">
+        <upperLeftCorner x="40" y="85"/>
+        <rectangleSize height="0" width="0"/>
+      </shape>
+    </shapes>
+  </layout>
+</Calculation:scenario>

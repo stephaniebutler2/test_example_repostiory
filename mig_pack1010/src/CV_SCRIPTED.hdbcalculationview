@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Calculation:scenario xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" schemaVersion="2.3" id="mig_pack1::CV_SCRIPTED" applyPrivilegeType="NONE" defaultClient="$$client$$" defaultLanguage="$$language$$" hierarchiesSQLEnabled="false" dataCategory="CUBE" enforceSqlExecution="false" executionSemantic="UNDEFINED" outputViewType="Projection" runWithInvokerPrivileges="true" scriptParametersCaseSensitive="true" xscCompatibilityMode="true">
+  <descriptions defaultDescription="CV_SCRIPTED"/>
+  <localVariables/>
+  <variableMappings/>
+  <informationModelLayout relativeWidthScenario="27"/>
+  <dataSources>
+    <DataSource id="TABLE_FUNCTION_CV_SCRIPTED" type="TABLE_FUNCTION">
+      <resourceUri>mig_pack1::TABLE_FUNCTION_CV_SCRIPTED</resourceUri>
+    </DataSource>
+  </dataSources>
+  <calculationViews/>
+  <logicalModel id="TABLE_FUNCTION_CV_SCRIPTED">
+    <descriptions/>
+    <attributes>
+      <attribute id="MANDT" order="1" attributeHierarchyActive="false" displayAttribute="false">
+        <descriptions defaultDescription="MANDT"/>
+        <keyMapping columnObjectName="TABLE_FUNCTION_CV_SCRIPTED" columnName="MANDT"/>
+      </attribute>
+      <attribute id="CARRID" order="2" attributeHierarchyActive="false" displayAttribute="false">
+        <descriptions defaultDescription="CARRID"/>
+        <keyMapping columnObjectName="TABLE_FUNCTION_CV_SCRIPTED" columnName="CARRID"/>
+      </attribute>
+    </attributes>
+    <calculatedAttributes/>
+    <privateDataFoundation>
+      <tableProxies/>
+      <joins/>
+      <layout>
+        <shapes/>
+      </layout>
+    </privateDataFoundation>
+    <baseMeasures>
+      <measure id="LUGGWEIGHT_SUM" order="3" aggregationType="sum" measureType="simple">
+        <descriptions defaultDescription="LUGGWEIGHT_SUM"/>
+        <measureMapping columnObjectName="TABLE_FUNCTION_CV_SCRIPTED" columnName="LUGGWEIGHT_SUM"/>
+      </measure>
+    </baseMeasures>
+    <calculatedMeasures/>
+    <restrictedMeasures/>
+    <localDimensions/>
+  </logicalModel>
+  <layout>
+    <shapes>
+      <shape modelObjectName="Output" modelObjectNameSpace="MeasureGroup">
+        <upperLeftCorner x="40" y="85"/>
+        <rectangleSize/>
+      </shape>
+    </shapes>
+  </layout>
+</Calculation:scenario>

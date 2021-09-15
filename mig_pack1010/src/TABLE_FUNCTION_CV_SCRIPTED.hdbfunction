@@ -1,0 +1,24 @@
+FUNCTION "mig_pack1::TABLE_FUNCTION_CV_SCRIPTED" ()
+RETURNS TABLE ("MANDT" NVARCHAR (3), "CARRID" NVARCHAR (3), "LUGGWEIGHT_SUM" DECIMAL (8, 4))
+LANGUAGE SQLSCRIPT
+SQL SECURITY INVOKER
+  AS 
+
+ 
+ /********* Begin Procedure Script ************/ 
+ BEGIN 
+ 	 var_out = 
+ 	 SELECT
+	 DISTINCT 
+	 	"MANDT",
+	 	"CARRID",
+	 	SUM("LUGGWEIGHT") AS "LUGGWEIGHT_SUM" 
+	 FROM "mig_pack1::CV_SBOOK"
+	 GROUP BY "MANDT",
+	 	"CARRID" 
+	 ORDER BY "MANDT" ASC,
+	 	"CARRID" ASC;
+
+
+return :var_out;
+END;

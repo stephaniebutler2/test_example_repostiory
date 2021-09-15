@@ -1,0 +1,25 @@
+_schema-version: 2.0
+ID: mig_pack1010
+description: 
+version: 0
+
+modules:
+  - name: mig_pack1010-db
+    type: hdb
+    path: mig_pack1010
+    requires:
+      - name: mig_pack1010-hdi
+        properties:
+            TARGET_CONTAINER: ~{service-name}
+      - name: synonym-grantor-service
+
+
+resources:
+  - name: mig_pack1010-hdi
+    type: com.sap.xs.hdi-container
+    properties:
+        service-name: ${service-name}
+  - name: synonym-grantor-service
+    type: org.cloudfoundry.existing-service
+    parameters:
+        service-name: SFLIGHT_UPS

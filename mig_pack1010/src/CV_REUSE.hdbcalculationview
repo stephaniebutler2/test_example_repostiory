@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Calculation:scenario xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" schemaVersion="2.3" id="mig_pack1::CV_REUSE" applyPrivilegeType="NONE" defaultClient="" defaultLanguage="$$language$$" hierarchiesSQLEnabled="false" dataCategory="DIMENSION" enforceSqlExecution="false" executionSemantic="UNDEFINED" outputViewType="Aggregation" xscCompatibilityMode="true">
+  <origin/>
+  <descriptions defaultDescription="CV_REUSE"/>
+  <metadata activatedAt="2021-02-05 16:39:08.0" changedAt="2021-02-08 19:23:39.682" createdAt="2021-02-08 19:23:39.681"/>
+  <localVariables/>
+  <variableMappings/>
+  <informationModelLayout relativeWidthScenario="27"/>
+  <dataSources>
+    <DataSource id="SCARR">
+      <resourceUri>mig_pack1::SCARR</resourceUri>
+    </DataSource>
+  </dataSources>
+  <calculationViews/>
+  <logicalModel id="SCARR">
+    <descriptions defaultDescription="CV_REUSE"/>
+    <attributes>
+      <attribute id="MANDT" order="1" attributeHierarchyActive="false" displayAttribute="false">
+        <descriptions defaultDescription="MANDT"/>
+        <keyMapping columnObjectName="SCARR" columnName="MANDT"/>
+      </attribute>
+      <attribute id="CARRID" order="2" attributeHierarchyActive="false" displayAttribute="false">
+        <descriptions defaultDescription="CARRID"/>
+        <keyMapping columnObjectName="SCARR" columnName="CARRID"/>
+      </attribute>
+      <attribute id="CARRNAME" order="3" attributeHierarchyActive="false" displayAttribute="false">
+        <descriptions defaultDescription="CARRNAME"/>
+        <keyMapping columnObjectName="SCARR" columnName="CARRNAME"/>
+      </attribute>
+      <attribute id="CURRCODE" order="4" attributeHierarchyActive="false" displayAttribute="false">
+        <descriptions defaultDescription="CURRCODE"/>
+        <keyMapping columnObjectName="SCARR" columnName="CURRCODE"/>
+      </attribute>
+      <attribute id="URL" order="5" attributeHierarchyActive="false" displayAttribute="false">
+        <descriptions defaultDescription="URL"/>
+        <keyMapping columnObjectName="SCARR" columnName="URL"/>
+      </attribute>
+    </attributes>
+    <calculatedAttributes/>
+    <privateDataFoundation>
+      <tableProxies/>
+      <joins/>
+      <layout>
+        <shapes/>
+      </layout>
+    </privateDataFoundation>
+    <baseMeasures/>
+    <calculatedMeasures/>
+    <restrictedMeasures/>
+    <localDimensions/>
+  </logicalModel>
+  <layout>
+    <shapes>
+      <shape expanded="true" modelObjectName="Output" modelObjectNameSpace="MeasureGroup">
+        <upperLeftCorner x="40" y="85"/>
+        <rectangleSize/>
+      </shape>
+    </shapes>
+  </layout>
+</Calculation:scenario>

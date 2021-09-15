@@ -1,0 +1,13 @@
+{
+    "role": {
+        "name": "mig_pack1::PublicAccessSchema#",
+        "schema_privileges": [
+            {
+                "privileges_with_grant_option": [
+                    "SELECT",
+                    "EXECUTE"
+                ]
+            }
+        ]
+    }
+}
